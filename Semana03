@@ -1,0 +1,16 @@
+algoritmo "Calculadora de Salario"
+// Funcao : A partir de um salario informado pelo usuario, retorne o valor do salario com aumento de 30%
+// Autor : Plinio de Andrade Vieira
+// Data : 21/02/2022
+var
+   salario, novoSalario: real
+   
+inicio
+      Escreval ("Informe o valor do seu salario:")
+      Leia (salario)
+      novoSalario <- salario * 1.3
+      Escreval ("O novo salario e de: R$", novoSalario:1:2) //No manual do VisuaAlg
+//foi encontrado que ao colocar "var:x:y" e possível limitar quantas casas queremos
+//a esqueda da virgula (x) e a direita da virgula (y). Os termos nao devem ser separados
+//por espacos ou virgulas, apenas ":"
+fimalgoritmo
