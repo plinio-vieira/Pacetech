@@ -1,0 +1,15 @@
+algoritmo "Conversor de Temperatura"
+// Funcao : Converter grau Celsius em Kelvin
+// Autor : Plinio de Andrade Vieira
+// Data : 11/02/2022
+var
+celsius, kelvin: real
+
+inicio
+Escreval ("Informe o valor em graus Celsius:")
+Leia (celsius)
+kelvin <- celsius + 273,15
+Escreval (" O valor em Kelvin e de: " ,kelvin, "K") // Para concatenar uma variavel
+//dentro de uma string, deve-se utilizar ",". Caso o K deva ficar separado do numero
+//entao adiciona-se um espaco entre o K e as aspas iniciais.
+fimalgoritmo
