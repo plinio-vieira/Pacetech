@@ -1,0 +1,50 @@
+algoritmo "Calculadora de Viagem"
+var
+opcaoMenu, opcaoMenu2: literal
+entradaCelsius, entradaFahrenheit, saidaCelsius, saidaFahrenheit: real
+entradaDolar, entradaReal, saidaDolar, saidaReal, cotacao: real
+inicio
+repita
+   limpatela
+   escreval("Bem vindo a calculadora de viagem Pacetech!")
+   escreval ("Digite o valor abaixo para selecionar o que deseja:")
+   escreval("1 - Converter Celsius para Fahrenheit")
+   escreval("2 - Converter Fahrenheit para Celsius")
+   escreval("3 - Converter Real para Dolar")
+   escreval("4 - Converter Dolar para Real")
+   escreval("5 - Sair")
+   leia(opcaoMenu)
+   escolha (opcaoMenu)
+   caso "1"
+      escreval("Informe a temperatura em Celsius")
+      leia(entradaCelsius)
+      saidaFahrenheit <- ((entradaCelsius * 1.8)+32)
+      escreval("A temperatura é de: ",saidaFahrenheit,"oF")
+   caso "2"
+      escreval("Informe a temperatura em Fahrenheit")
+      leia(entradaFahrenheit)
+      saidaCelsius <- ((entradaFahrenheit - 32) / 1.8)
+      escreval("A temperatura é de: ",saidaCelsius,"oC")
+   caso "3"
+      escreval("Informe a cotação do dolar de hoje")
+      leia (cotacao)
+      escreval("Quantos Reais você quer converter?")
+      leia(entradaReal)
+      saidaDolar <- (entradaReal / cotacao)
+      escreval("O valor em Dólares é de: US$",saidaDolar:3:2)
+   caso "4"
+      escreval("Informe a cotação do dolar de hoje")
+      leia (cotacao)
+      escreval("Quantos Dólares você quer converter?")
+      leia(entradaDolar)
+      saidaReal <- (entradaDolar * cotacao)
+      escreval("O valor em Reais é de: R$",saidaReal:3:2)
+   caso "5"
+      escreval ("Obrigado e tenha uma boa viagem!")
+   outrocaso
+      escreval ("Opção invalida")
+   fimescolha
+   escreval("Pressione qualquer tecla para continuar.")
+   leia(opcaoMenu2)
+ate (opcaoMenu = "5")
+fimalgoritmo
