@@ -45,6 +45,7 @@ repita
       escreval ("Opção invalida")
    fimescolha
    escreval("Pressione qualquer tecla para continuar.")
-   leia(opcaoMenu2)
+   leia(opcaoMenu2)   //Este comando foi colocado para poder funcionar a opção limpatela, cheguei nela atraves de pesquisa na internet mas 
+                      //não sei explicar como ela funciona ou porque ela tem que estar aqui
 ate (opcaoMenu = "5")
 fimalgoritmo
