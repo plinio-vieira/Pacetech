@@ -1,0 +1,41 @@
+algoritmo "Calculadora de Temperatura com Menu"
+var
+opcaoMenu, opcaoMenu2: literal
+entradaCelsius, entradaFahrenheit, saidaCelsius, saidaFahrenheit: real
+i: inteiro
+conversao: real
+inicio
+i <- 0
+conversao <- 0
+repita
+   limpatela
+   escreval("Bem vindo a calculadora de Temperatura Pacetech!")
+   escreval ("Digite o valor abaixo para selecionar o que deseja:")
+   escreval("1 - Converter Celsius para Fahrenheit")
+   escreval("2 - Converter Fahrenheit para Celsius")
+   escreval("3 - Sair")
+   leia(opcaoMenu)
+   escolha (opcaoMenu)
+   caso "1"
+      escreval("Informe a temperatura em Celsius")
+      leia(entradaCelsius)
+      saidaFahrenheit <- ((entradaCelsius * 1.8)+32)
+      escreval("A temperatura é de: ",saidaFahrenheit:2:2,"oF")
+   caso "2"
+      escreval("Informe a temperatura em Fahrenheit")
+      leia(entradaFahrenheit)
+      saidaCelsius <- ((entradaFahrenheit - 32) / 1.8)
+      escreval("A temperatura é de: ",saidaCelsius:2:2,"oC")
+   caso "3"
+      escreval ("Obrigado e tenha uma bom dia!")
+   outrocaso
+      escreval ("Opção invalida")
+   fimescolha
+   para i de 1 ate 100 faca
+      conversao <- ((i * 1.8) + 32)
+      escreval(i, "oC - ",conversao:2:2, "oF")
+   fimpara
+   escreval("Pressione qualquer tecla para continuar.")
+   leia(opcaoMenu2)
+ate (opcaoMenu = "3")
+fimalgoritmo
