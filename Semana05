@@ -127,10 +127,10 @@ procedimento dolarReal()
 inicio
 escreval("Informe a cotação do dolar de hoje")
 leia (cotacao)
-escreval("Quantos Reais você quer converter?")
+escreval("Quantos Dólares você quer converter?")
 leia(entradaMoeda)
 saidaMoeda <- (entradaMoeda * cotacao)
-escreval("O valor em Dólares é de: US$",saidaMoeda:3:2)
+escreval("O valor em Reais é de: R$",saidaMoeda:3:2)
 fimprocedimento
 
 inicio
