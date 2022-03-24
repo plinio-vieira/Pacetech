@@ -1,0 +1,56 @@
+//Project: CalculoIMC.java
+
+package calculoimc;
+
+import java.util.Scanner;
+
+public class CalculoIMC {
+
+    public static void main(String[] args) {
+
+        Pessoa objetoPessoa = new Pessoa();
+        Scanner leitor = new Scanner(System.in);
+        
+        System.out.println("Informe o peso do usuário");
+        objetoPessoa.setPeso(leitor.nextFloat());
+        System.out.println("Informe a altura do usuário");
+        objetoPessoa.setAltura(leitor.nextFloat());
+        System.out.println("IMC = " + objetoPessoa.calcularIMC());
+    }
+}
+
+
+-----------------------------------------------------------------------------------------------------------
+//Class: Pessoa.java
+
+package calculoimc;
+
+public class Pessoa {
+
+    //Atributos
+    private float peso;
+    private float altura;
+
+    public float calcularIMC() {
+        float imc = (peso / (altura * altura));
+        return imc;
+    }
+
+    public void setPeso(float peso) {
+        this.peso = peso;
+    }
+
+    public float getPeso() {
+        return peso;
+    }
+
+    public void setAltura(float altura) {
+        this.altura = altura;
+    }
+
+    public float getAltura() {
+        return altura;
+    }
+}
+
+
