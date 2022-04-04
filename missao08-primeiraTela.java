@@ -1,4 +1,4 @@
-package projetosemana8;
+package missao08;
 
 public class PrimeiraTela extends javax.swing.JFrame {
 
@@ -232,7 +232,7 @@ public class PrimeiraTela extends javax.swing.JFrame {
         );
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("André Victor Leal - Pacetech");
+        jLabel1.setText("Plinio Vieira - Pacetech");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
